@@ -27,7 +27,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: 10.0.x
 
     - name: Install GitVersion
       uses: gittools/actions/gitversion/setup@v1
@@ -124,7 +124,7 @@ jobs:
           | Windows ARM64 | `FlaUI-MCP-win-arm64-*-self-contained.zip` | `FlaUI-MCP-win-arm64-*.zip` |
           
           - **Self-contained**: Includes .NET runtime, no prerequisites needed
-          - **Framework-dependent**: Requires .NET 8.0 runtime installed
+          - **Framework-dependent**: Requires .NET 10.0 runtime installed
           
           ### Installation
           
